@@ -1,0 +1,37 @@
+:root {
+    /*Color Pallet*/
+    --color-main-black: #000000;
+    --color-main-green: #468902;
+    --color-main-green-light: #b1de00;
+    --color-main-grey: #628290;
+    --color-main-blue: #133954;
+    /*end*/
+}
+
+.home-navigation__side--left {
+    height: 100%;
+    width: 100px;
+    position: fixed; /*stays in the same place even if the page is scrolled*/
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--color-main-black);
+    overflow-x: hidden; /*controls what happens to content that breaks outside of its bounds*/
+    padding-top: 20px;
+}
+
+.home-navigation__side--left i {
+  text-decoration: none;
+  font-size: 250%;
+  color: var(--color-main-green-light);
+  display: block;
+}
+
+.home-navigation__side--left i:hover {
+  color: var(--color-main-green);
+}
+
+.arrow-right__double {
+    text-align: center;
+    padding-top:
+}

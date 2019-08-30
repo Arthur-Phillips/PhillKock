@@ -1,0 +1,6 @@
+index.html -> Center the double arrows vertically within the navbar such that
+                it will stay in said position until the screen is small
+                in which case it needs to sit on the top of the screen with
+                arrows pointing down
+
+index.html -> add social icons as well
