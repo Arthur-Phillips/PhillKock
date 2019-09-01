@@ -1,11 +1,15 @@
 :root {
     /*Color Pallet*/
-    --color-main-black: #000000;
-    --color-main-green: #468902;
-    --color-main-green-light: #b1de00;
-    --color-main-grey: #628290;
-    --color-main-blue: #133954;
+    --color-main-black: #000000; /*rgb(0,0,0)*/
+    --color-main-green: #468902; /*rgb(70,137,2)*/
+    --color-main-green-light: #b1de00; /*rgb(177,222,0)*/
+    --color-main-grey: #628290; /*rgb(98,130,144)*/
+    --color-main-blue: #133954; /*rgb(19,57,84)*/
     /*end*/
+}
+
+body {
+    background-color: var(--color-main-blue);
 }
 
 .home-navigation__side--left {
@@ -22,7 +26,7 @@
 
 .home-navigation__side--left i {
   text-decoration: none;
-  font-size: 250%;
+  font-size: 300%;
   color: var(--color-main-green-light);
   display: block;
 }
@@ -33,5 +37,20 @@
 
 .arrow-right__double {
     text-align: center;
-    padding-top:
+    padding-left: 28%;
+}
+
+.center-vertical {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.img-logo__full img{
+    width: 110%;
+    height: 110%;
+    -ms-transform: translateX(-6%);
+    transform: translateX(-6%);
 }
