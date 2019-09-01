@@ -25,19 +25,22 @@ body {
 }
 
 .home-navigation__side--left i {
-  text-decoration: none;
-  font-size: 300%;
-  color: var(--color-main-green-light);
-  display: block;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 300%;
+    color: var(--color-main-green-light);
+    display: block;
+    padding-left: 28%;
 }
 
 .home-navigation__side--left i:hover {
-  color: var(--color-main-green);
+    color: var(--color-main-green);
+    font-size: 350%;
+    padding-left: 25%; /*Slightly push back for smooth increase in size*/
 }
 
 .arrow-right__double {
     text-align: center;
-    padding-left: 28%;
 }
 
 .center-vertical {
