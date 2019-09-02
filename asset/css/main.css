@@ -12,6 +12,22 @@ body {
     background-color: var(--color-main-blue);
 }
 
+.center-vertical {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.img-logo__full img{
+    width: 110%;
+    height: 110%;
+    -ms-transform: translateX(-6%);
+    transform: translateX(-6%);
+}
+
+/*Sidenav !Full Width*/
 .home-navigation__side--left {
     height: 100%;
     width: 100px;
@@ -42,18 +58,4 @@ body {
 .arrow-right__double {
     text-align: center;
 }
-
-.center-vertical {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.img-logo__full img{
-    width: 110%;
-    height: 110%;
-    -ms-transform: translateX(-6%);
-    transform: translateX(-6%);
-}
+/*end*/
