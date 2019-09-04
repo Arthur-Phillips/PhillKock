@@ -20,11 +20,28 @@ body {
     transform: translateY(-50%);
 }
 
-.img-logo__full img{
-    width: 110%;
-    height: 110%;
+.img-logo {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
     -ms-transform: translateX(-6%);
     transform: translateX(-6%);
+}
+
+.img-logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.img-logo .img-logo__top{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-logo:hover .img-logo__top{
+    display: inline;
 }
 
 /*Sidenav !Full Width*/
