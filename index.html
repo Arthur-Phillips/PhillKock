@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="asset\css\bootstrap\bootstrap.css">
     <link rel="stylesheet" href="asset\css\main.css">
+    <!--Custom Scrollbar CSS Sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <title>PhillKock Web Development</title>
     <!-- Font-awesome-->
     <script src="https://kit.fontawesome.com/9e452ff902.js"></script>
@@ -20,11 +22,26 @@
             </div>
         </a>
         <div class="arrow-right__double">
-            <i class="fas fa-angle-double-right center-vertical"></i>
+            <i class="fas fa-angle-double-right center-vertical"  onclick="overlayOn()"></i>
         </div>
     </div>
     <!-- end -->
 
+    <!--Sidebar overlay-->
+    <div class="home-background__image--hero">
+        <div class="home-text__image--hero">
+            <img src="asset\img\logo\Logo+Slogan-Black__green-t.png" alt="PhillKock Web Development logo">
+            <p>Personalized, for your business</p>
+            <!--<button>Contact</button>-->
+        </div>
+    </div>
+    <!--end-->
+
+    <div class="main-body">
+        <div id="overlay" onclick="overlayOff()">
+
+        </div>
+    </div>
     <!-- Linked JS sssets-->
     <!-- Order: JQuery / Popper / Bootstrap / Main-->
     <script src="asset\js\jquery\jquery-3.4.1.min.js" charset="utf-8"></script>
