@@ -8,8 +8,10 @@
     /*end*/
 }
 
-body {
+body, html {
     background-color: var(--color-main-blue);
+    height: 100%;
+    margin: 0;
 }
 
 .center-vertical {
@@ -74,5 +76,70 @@ body {
 
 .arrow-right__double {
     text-align: center;
+}
+/*end*/
+
+/*Sidebar overlay*/
+/*end*/
+
+/*main body*/
+.main-body{
+    padding-left: 100px;
+}
+
+.home-background__image--hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/800/500"); /*Currently a random image on each refresh*/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home-text__image--hero {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.home-text__image--hero p{
+    color: var(--color-main-green-light);
+}
+
+.home-text__image--hero button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: var(--color-main-green-light);
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-main-black);
+    border-radius: 15px;
+}
+
+.home-text__image--hero button:hover {
+    background-color: var(--color-main-black);
+    color: var(--color-main-green-light);
+}
+/*end*/
+
+/*Overlay*/
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,255);
+    z-index: 2;
+    cursor: pointer;
 }
 /*end*/
