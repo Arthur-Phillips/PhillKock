@@ -74,7 +74,7 @@ body, html {
     padding-left: 25%; /*Slightly push back for smooth increase in size*/
 }
 
-.arrow-right__double {
+.arrow-double {
     text-align: center;
 }
 /*end*/
@@ -181,6 +181,14 @@ body, html {
     background-color: var(--color-main-black);
     overflow: hidden; /*controls what happens to content that breaks outside of its bounds*/
     padding: 10%;
+}
+
+#navigation-arrow__right{
+    display: block;
+}
+
+#navigation-arrow__left {
+    display: none;
 }
 
 .overlay-column__right--text {
