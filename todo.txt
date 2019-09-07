@@ -1,1 +1,1 @@
-index.html -> add social icons as well
+Need to make everything responsive

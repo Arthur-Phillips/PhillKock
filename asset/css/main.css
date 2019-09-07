@@ -135,79 +135,50 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,255);
+    background-color: var(--color-main-blue);
     z-index: 2;
-    cursor: pointer;
-    transition: 15.5s;
+}
+
+.overlay-container {
+        color: var(--color-main-green-light);
+}
+
+.overlay-container__left {
+    background-color: var(--color-main-black);
+    overflow: hidden;
+    border-style: solid;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.overlay-container__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 980px;
+    background-color: var(--color-main-blue);
+    height: 100%;
+    border-style: solid;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 
 /*columns*/
-    .overlay-column {
-        float: left;
-        padding-left: 100px;
-        height: 100%;
-    }
-
-    .overlay-column__left {
-        width: 30%;
-        background-color: var(--color-main-green);
-    }
-
-    .overlay-column__left--text{
-        text-align: center;
-    }
-
-    .overlay-column__right {
-        width: 70%;
-        background-color: var(--color-main-green-light);
-    }
-
-    .overlay-column__row:after {
-        content: "";
-        display: table;
-        clear: both;
-}
-
-.overlay-column__button-group{
-    background-color: var(--color-main-black);
-    border: 5px solid black;
-    border-color: var(--color-main-green-light);
-
-    height: 100%;
-    width: 30%;
-    position: fixed; /*stays in the same place even if the page is scrolled*/
-    top: 0px;
-    left: 100px;
-    background-color: var(--color-main-black);
-    overflow: hidden; /*controls what happens to content that breaks outside of its bounds*/
-    padding: 10%;
-}
-
 #navigation-arrow__right{
     display: block;
 }
 
 #navigation-arrow__left {
     display: none;
-}
-
-.overlay-column__right--text {
-
-}
-
-.overlay-column__portfolio-group {
-    background-color: var(--color-main-black);
-    border: 5px solid black;
-    border-color: var(--color-main-green-light);
-
-    height: 100%;
-    width: 70%;
-    position: fixed; /*stays in the same place even if the page is scrolled*/
-    top: 0px;
-    right: 0px;
-    background-color: var(--color-main-blue);
-    overflow: hidden; /*controls what happens to content that breaks outside of its bounds*/
-    padding: 10%;
 }
 /*end*/
 /*end*/
