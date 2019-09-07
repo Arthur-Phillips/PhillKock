@@ -51,7 +51,7 @@ body, html {
     height: 100%;
     width: 100px;
     position: fixed; /*stays in the same place even if the page is scrolled*/
-    z-index: 1;
+    z-index: 3; /*Over the overlay*/
     top: 0;
     left: 0;
     background-color: var(--color-main-black);
@@ -77,9 +77,6 @@ body, html {
 .arrow-right__double {
     text-align: center;
 }
-/*end*/
-
-/*Sidebar overlay*/
 /*end*/
 
 /*main body*/
@@ -141,5 +138,68 @@ body, html {
     background-color: rgba(0,0,0,255);
     z-index: 2;
     cursor: pointer;
+    transition: 15.5s;
 }
+
+/*columns*/
+    .overlay-column {
+        float: left;
+        padding-left: 100px;
+        height: 100%;
+    }
+
+    .overlay-column__left {
+        width: 30%;
+        background-color: var(--color-main-green);
+    }
+
+    .overlay-column__left--text{
+        text-align: center;
+    }
+
+    .overlay-column__right {
+        width: 70%;
+        background-color: var(--color-main-green-light);
+    }
+
+    .overlay-column__row:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+
+.overlay-column__button-group{
+    background-color: var(--color-main-black);
+    border: 5px solid black;
+    border-color: var(--color-main-green-light);
+
+    height: 100%;
+    width: 30%;
+    position: fixed; /*stays in the same place even if the page is scrolled*/
+    top: 0px;
+    left: 100px;
+    background-color: var(--color-main-black);
+    overflow: hidden; /*controls what happens to content that breaks outside of its bounds*/
+    padding: 10%;
+}
+
+.overlay-column__right--text {
+
+}
+
+.overlay-column__portfolio-group {
+    background-color: var(--color-main-black);
+    border: 5px solid black;
+    border-color: var(--color-main-green-light);
+
+    height: 100%;
+    width: 70%;
+    position: fixed; /*stays in the same place even if the page is scrolled*/
+    top: 0px;
+    right: 0px;
+    background-color: var(--color-main-blue);
+    overflow: hidden; /*controls what happens to content that breaks outside of its bounds*/
+    padding: 10%;
+}
+/*end*/
 /*end*/
