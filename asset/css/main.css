@@ -395,7 +395,9 @@ body, html {
 }
 
 .service-card h3{
-
+    background-color: var(--color-main-black);
+    color: var(--color-main-green-light);
+    height: 100%;
 }
 
 .service-card img{
@@ -406,8 +408,26 @@ body, html {
   opacity: 0.7;
 }
 
+.service-card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: var(--color-main-green-light);
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.service-card button:hover {
+    background-color: var(--color-main-green-light);
+    color: var(--color-main-black);
+}
+
 /* Flip cards*/
-.flip-card {
+/* .flip-card {
   background-color: transparent;
   width: 200px;
   height: 200px;
@@ -426,7 +446,6 @@ body, html {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
 .flip-card:hover .flip-card-inner {
@@ -448,9 +467,48 @@ body, html {
   background-color: var(--white);
   color: var(--color-main-black);
   transform: rotateY(180deg);
-}
+} */
 
 
 /*Contact container*/
 .contact-container {
+}
+
+#client-display-one {
+
+}
+
+#client-display-two {
+    display: none;
+}
+
+/*Contact Form*/
+.contact-container input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contact-container input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-container input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact-from-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
