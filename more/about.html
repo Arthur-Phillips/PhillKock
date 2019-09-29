@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="..\asset\css\bootstrap\bootstrap.css">
+    <link rel="stylesheet" href="..\asset\css\main.css">
+    <!--Custom Scrollbar CSS Sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <title>PK : About</title>
+    <!-- Font-awesome-->
+    <script src="https://kit.fontawesome.com/9e452ff902.js"></script>
+  </head>
+  <body>
+    <!-- You can also link directly to a hosted bootstrap file-->
+    <!-- Sidebar navigation -->
+    <div class="home-navigation__side--left">
+        <a href="#"> <!-- ToDo// Should link to main site/home-->
+            <div class="img-logo">
+                <img src="..\asset\img\logo\black-green__crop--circle-short.png" alt="PhillKock - Web Development">
+                <img class="img-logo__top" src="..\asset\img\logo\black-green__crop--circle-short-inverted.png" alt="PhillKock - Web Development">
+            </div>
+        </a>
+        <div class="arrow-double">
+            <i id="navigation-arrow__right" class="fas fa-angle-double-right center-vertical" onclick="navigationArrows(); overlayOn()"></i>
+            <i id="navigation-arrow__left" class="fas fa-angle-double-left center-vertical"  onclick="navigationArrows(); overlayOff()"></i>
+        </div>
+    </div>
+    <!-- end -->
+    <!--Sidebar overlay-->
+    <div id="overlay">
+        <div class="overlay-container">
+            <div class="overlay-container__left">
+                <div class="overlay-container__button-group">
+                    <ul>
+                        <li>
+                            <span><a href="..\index.html"><button class="overlay-navigation__button">Home</button></a></span>
+                        </li>
+                        <li>
+                            <span><a href="#"><button class="overlay-navigation__button active-nav">About</button></a></span>
+                        </li>
+                        <li>
+                            <span><a href="service.html"><button class="overlay-navigation__button">Services</button></a></span>
+                        </li>
+                        <li>
+                            <span><a href="client.html"><button class="overlay-navigation__button">Clients</button></a></span>
+                        </li>
+                        <li>
+                            <span><a href="contact.html"><button class="overlay-navigation__button">Contact</button></a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="overlay-container__right">
+                <div class="card overlay-right__card">
+                    <img src="..\asset\img\website\example-site__one.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Example Site</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vel ut delectus dicta architecto voluptates alias cum, unde molestiae ratione totam dolor reprehenderit. Earum provident, labore ex hic similique consequatur..</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary btn-lg btn-block">Live Demo</button></a>
+                    </div>
+                </div>
+                <hr class="overlay-card__divider">
+                <div class="card overlay-right__card">
+                    <img src="..\asset\img\website\example-site__two.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Example Site</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis alias, pariatur consectetur autem eligendi vero laboriosam sunt dolores voluptates eos officia assumenda in dolore iste laudantium quibusdam eveniet quia architecto.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary btn-lg btn-block">Live Demo</button></a>
+                    </div>
+                </div>
+                <hr class="overlay-card__divider">
+                <div class="card overlay-right__card">
+                    <img src="..\asset\img\website\example-site__three.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Example Site</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem incidunt enim cum optio hic nostrum animi nesciunt aperiam placeat totam voluptatem iusto, perspiciatis, eveniet maiores, possimus perferendis ipsa debitis atque.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link"><button type="button" class="btn btn-outline-primary btn-lg btn-block">Live Demo</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+    <div class="main-body about-main">
+    </div>
+    <!-- Linked JS sssets-->
+    <!-- Order: JQuery / Popper / Bootstrap / Main-->
+    <script src="..\asset\js\jquery\jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script src="..\asset\js\popper\popper.min.js" charset="utf-8"></script>
+    <script src="..\asset\js\bootstrap\bootstrap.js" charset="utf-8"></script>
+    <script src="..\asset\js\main.js" charset="utf-8"></script>
+  </body>
+</html>
